@@ -1,0 +1,79 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.header {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.form input[type="text"],
+.form input[type="number"],
+.form button {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.form button {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: #45a049;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap; /* Cards will wrap into a new row when necessary */
+  gap: 20px;
+  justify-content: space-between; /* Distribute cards evenly in the container */
+}
+
+li {
+  flex: 0 1 22%; /* Each card will take up approximately 22% of the container width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+li img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+li .movie-details {
+  margin-top: 10px;
+  text-align: center;
+}
+
+li .movie-details h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+li .movie-details p {
+  margin: 5px 0;
+}

@@ -1,0 +1,66 @@
+.movie-container {
+  width: 300px; /* Set the width of the movie card */
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background-color: #fff;
+  transition: transform 0.2s ease;
+}
+
+.movie-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.movie-container a {
+  display: block;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+}
+
+.movie-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.movie-details {
+  padding: 15px;
+}
+
+.movie-details h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.movie-details p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+li .like-button,
+li .unlike-button {
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+li .unlike-button {
+  background-color: #f44336;
+}
+
+li .like-button:hover,
+li .unlike-button:hover {
+  background-color: #45a049;
+}
+
+/* Add a hover effect to the movie cards */
+li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
